@@ -1,0 +1,88 @@
+{
+  "name": "Universal Developer Mode",
+  "description": "Cross-app shortcuts optimized for Claude Code, Ghostty, and Cursor",
+  "version": "1.0",
+  "target_apps": ["Claude Code", "Ghostty", "Cursor"],
+  "mappings": {
+    "side": {
+      "action": "cmd+c",
+      "description": "Copy"
+    },
+    "top": {
+      "action": "cmd+v",
+      "description": "Paste"
+    },
+    "tall": {
+      "action": "cmd+z",
+      "description": "Undo"
+    },
+    "short": {
+      "action": "cmd+shift+z",
+      "description": "Redo"
+    },
+    "dpad_up": {
+      "action": "up",
+      "description": "Navigate Up"
+    },
+    "dpad_down": {
+      "action": "down",
+      "description": "Navigate Down"
+    },
+    "dpad_left": {
+      "action": "left",
+      "description": "Navigate Left"
+    },
+    "dpad_right": {
+      "action": "right",
+      "description": "Navigate Right"
+    },
+    "c1": {
+      "action": "cmd+s",
+      "description": "Save"
+    },
+    "c2": {
+      "action": "cmd+w",
+      "description": "Close Tab/Window"
+    },
+    "scroll_up": {
+      "action": "cmd+shift+]",
+      "description": "Next Tab"
+    },
+    "scroll_down": {
+      "action": "cmd+shift+[",
+      "description": "Previous Tab"
+    },
+    "scroll_click": {
+      "action": "cmd+t",
+      "description": "New Tab"
+    },
+    "knob_cw": {
+      "action": "cmd+=",
+      "description": "Zoom In"
+    },
+    "knob_ccw": {
+      "action": "cmd+-",
+      "description": "Zoom Out"
+    },
+    "knob_click": {
+      "action": "cmd+0",
+      "description": "Reset Zoom"
+    },
+    "dial_cw": {
+      "action": "page_down",
+      "description": "Scroll Down"
+    },
+    "dial_ccw": {
+      "action": "page_up",
+      "description": "Scroll Up"
+    },
+    "dial_click": {
+      "action": "cmd+home",
+      "description": "Go to Top"
+    },
+    "tour": {
+      "action": "cmd+space",
+      "description": "Spotlight / Command Palette"
+    }
+  }
+}

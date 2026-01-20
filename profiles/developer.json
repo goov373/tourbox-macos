@@ -1,0 +1,88 @@
+{
+  "name": "Developer Mode",
+  "description": "Optimized for Claude Code, Ghostty terminal, and Cursor editor workflow",
+  "version": "1.0",
+  "target_apps": ["Claude Code", "Ghostty", "Cursor"],
+  "mappings": {
+    "side": {
+      "action": "cmd+c",
+      "description": "Copy"
+    },
+    "top": {
+      "action": "cmd+v",
+      "description": "Paste"
+    },
+    "tall": {
+      "action": "cmd+z",
+      "description": "Undo"
+    },
+    "short": {
+      "action": "cmd+shift+z",
+      "description": "Redo"
+    },
+    "dpad_up": {
+      "action": "up",
+      "description": "Navigate up"
+    },
+    "dpad_down": {
+      "action": "down",
+      "description": "Navigate down"
+    },
+    "dpad_left": {
+      "action": "left",
+      "description": "Navigate left"
+    },
+    "dpad_right": {
+      "action": "right",
+      "description": "Navigate right"
+    },
+    "c1": {
+      "action": "ctrl+c",
+      "description": "Cancel/Interrupt (Ctrl+C in terminal)"
+    },
+    "c2": {
+      "action": "cmd+w",
+      "description": "Close tab"
+    },
+    "scroll_up": {
+      "action": "cmd+shift+]",
+      "description": "Next tab"
+    },
+    "scroll_down": {
+      "action": "cmd+shift+[",
+      "description": "Previous tab"
+    },
+    "scroll_click": {
+      "action": "cmd+t",
+      "description": "New tab"
+    },
+    "knob_cw": {
+      "action": "cmd+=",
+      "description": "Zoom in"
+    },
+    "knob_ccw": {
+      "action": "cmd+-",
+      "description": "Zoom out"
+    },
+    "knob_click": {
+      "action": "shift+tab",
+      "description": "Cycle Claude Code mode"
+    },
+    "dial_cw": {
+      "action": "page_down",
+      "description": "Scroll down"
+    },
+    "dial_ccw": {
+      "action": "page_up",
+      "description": "Scroll up"
+    },
+    "dial_click": {
+      "action": "cmd+n",
+      "description": "New Ghostty window"
+    },
+    "tour": {
+      "action": "cmd+space",
+      "description": "Spotlight"
+    }
+  }
+}
