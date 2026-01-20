@@ -81,8 +81,8 @@
       "description": "New Ghostty window"
     },
     "tour": {
-      "action": "cmd+space",
-      "description": "Spotlight"
+      "action": "shell:open -na Ghostty --args -e claude",
+      "description": "New Ghostty window with Claude"
     }
   }
 }

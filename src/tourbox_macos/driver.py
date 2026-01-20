@@ -10,6 +10,7 @@ import time
 import json
 import glob
 import logging
+import subprocess
 import threading
 from pathlib import Path
 from typing import Optional, Dict, Callable, Tuple
@@ -274,6 +275,17 @@ class TourBoxDriver:
                 text = action_str[5:]  # Remove 'type:' prefix
                 self.keyboard.type(text)
                 logger.debug(f"Typed: {text}")
+            return
+
+        # Handle shell command actions
+        if action_str.startswith('shell:'):
+            if is_press:
+                cmd = action_str[6:]  # Remove 'shell:' prefix
+                try:
+                    subprocess.Popen(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    logger.debug(f"Executed: {cmd}")
+                except Exception as e:
+                    logger.error(f"Shell command failed: {e}")
             return
 
         keys = self._parse_action(action_str)
