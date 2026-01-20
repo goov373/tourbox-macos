@@ -73,9 +73,10 @@ Profiles map button names to actions:
 {
   "mappings": {
     "button_name": {
-      "action": "cmd+c",        // Key combo
-      "action": "type:text",    // Type literal text
-      "action": ["a", "b"],     // Multiple actions
+      "action": "cmd+c",              // Key combo
+      "action": "type:text",          // Type literal text
+      "action": "shell:command",      // Run shell command
+      "action": ["a", "b"],           // Multiple actions
       "description": "Copy"
     }
   }
@@ -104,6 +105,7 @@ Tour: `tour`
 - The driver runs as a launchd agent (auto-starts on login)
 - Profile changes require driver restart
 - Text typing uses `type:` prefix in action strings
+- Shell commands use `shell:` prefix (e.g., `shell:claude-window`)
 - Combo actions use arrays: `["type:/commit", "enter"]`
 
 ## Future Work (Roadmap)

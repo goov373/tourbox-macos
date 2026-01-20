@@ -70,7 +70,21 @@ Execute multiple actions in sequence.
 "action": ["cmd+a", "cmd+c"]         // Select all, then copy
 ```
 
-### 5. No Action
+### 5. Shell Commands
+
+Execute shell commands using the `shell:` prefix.
+
+```json
+"action": "shell:claude-window"           // Run command in PATH
+"action": "shell:open -a Safari"          // Open an application
+"action": "shell:~/.local/bin/my-script"  // Run a script
+```
+
+**Note:** Commands run via the user's default shell. For commands that need
+environment variables from `.zshrc`/`.bashrc`, create a wrapper script that
+uses a login shell (e.g., `zsh -l -c 'command'`).
+
+### 6. No Action
 
 Disable a button.
 
@@ -202,7 +216,7 @@ Any single character: `a`, `b`, `1`, `2`, `-`, `=`, `[`, `]`, etc.
     "c2": { "action": "cmd+w", "description": "Close tab" },
     "knob_click": { "action": "shift+tab", "description": "Cycle mode" },
     "dial_click": { "action": "cmd+n", "description": "New window" },
-    "tour": { "action": "cmd+space", "description": "Spotlight" }
+    "tour": { "action": "shell:claude-window", "description": "New Ghostty + Claude" }
   }
 }
 ```
